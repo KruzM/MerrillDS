@@ -24,6 +24,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .navbar {
@@ -297,10 +298,11 @@ body {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border-left-color: #9cc5a1;
-  border-left-width: 5px;
+  border-left:3px solid #9cc5a1;
   align-items: center;
   justify-content: center;
+  display:flex;
+  flex-direction:column;
 }
 
 .blog-card h3 {
