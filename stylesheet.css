@@ -65,7 +65,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #216869, #49a078);
+  background: url(images/alex-shuper-3ex4_p_4588-unsplash.jpg) no-repeat
+    bottom/cover;
   color: #ffffff;
   padding: 100px 20px;
   text-align: center;
