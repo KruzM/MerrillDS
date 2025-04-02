@@ -25,6 +25,7 @@ body {
   top: 0;
   z-index: 999;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 2em;
 }
 
 .navbar {
@@ -38,7 +39,7 @@ body {
 .logo a {
   font-family: "Merriweather", serif;
   color: #dce1de;
-  font-size: 28px;
+  font-size: 1.1em;
   text-decoration: none;
 }
 
@@ -46,18 +47,20 @@ body {
   list-style: none;
   display: flex;
   gap: 25px;
+  font-size: 1.2rem;
 }
 
 .nav-links a {
   color: #dce1de;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #9cc5a1;
+  text-decoration: underline #9cc5a1;
 }
 
 /* Hero Section */
@@ -382,8 +385,9 @@ body {
 }
 
 .services-more {
-  background: linear-gradient(to left, #216869, #49a078);
-  color: #ffffff;
+  background: url("images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg")
+    no-repeat center/cover;
+  color: #1f2421;
   padding: 100px 20px;
   text-align: center;
   min-height: 30vh;
@@ -411,4 +415,41 @@ body {
   color: #216869;
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.portfolio-item {
+  flex: 1 1 300px;
+  max-width: 80%;
+  text-align: center;
+  background-color: #e5ebe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px #9cc5a1;
+}
+
+.portfolio-item h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-decoration: underline #49a078;
+}
+
+.portfolio-item p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
