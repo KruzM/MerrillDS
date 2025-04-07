@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 /* Base Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@ body {
 }
 
 /* Header */
+
 .header {
   background-color: #216869;
   padding: 20px 40px;
@@ -64,6 +66,7 @@ body {
 }
 
 /* Hero Section */
+
 .hero {
   background: url(images/alex-shuper-3ex4_p_4588-unsplash.jpg) no-repeat
     bottom/cover;
@@ -105,6 +108,7 @@ body {
 }
 
 /* Features Section */
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -140,6 +144,7 @@ body {
 }
 
 /* About Preview */
+
 .about-preview {
   padding: 60px 20px;
   background-color: #f4f7f6;
@@ -186,6 +191,7 @@ body {
 }
 
 /* Footer */
+
 .footer {
   background-color: #1f2421;
   color: #dce1de;
@@ -226,6 +232,7 @@ body {
   }
 }
 /* ABOUT PAGE STYLES */
+
 .about-container {
   max-width: 900px;
   margin: 60px auto;
@@ -247,6 +254,7 @@ body {
 }
 
 /* CONTACT PAGE STYLES */
+
 .contact-container {
   max-width: 900px;
   margin: 60px auto;
