@@ -363,7 +363,7 @@ body {
 /* BlOG PAGE STYLES */
 
 .blog-container {
-  max-width: auto;
+  max-width: 100%;
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -387,7 +387,6 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  /* max-width: 85%; */
 }
 
 .blog-card:nth-of-type(2n) {
@@ -401,7 +400,6 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  /* max-width: 85%; */
 }
 
 .blog-card-preview {
