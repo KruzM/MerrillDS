@@ -16,6 +16,7 @@ body {
   background-color: #f4f7f6;
   color: #1f2421;
   line-height: 1.6;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* Header */
@@ -294,8 +295,10 @@ body {
 
 .about-heading {
   font-size: 2.5rem;
-  color: #216869;
+  color: black;
   margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline #216869;
 }
 
 .about-text {
@@ -367,12 +370,41 @@ body {
 
 .blog-page-heading {
   font-size: 2.5rem;
-  color: #216869;
+  color: black;
   margin-bottom: 20px;
   text-align: center;
+  text-decoration: underline #216869;
 }
 
 .blog-card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #9cc5a1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 85%; */
+}
+
+.blog-card:nth-of-type(2n) {
+  background-color: #e7faeb;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #9cc5a1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 85%; */
+}
+
+.blog-card-preview {
   background-color: #f4f7f6;
   padding: 20px;
   margin-bottom: 20px;
@@ -384,8 +416,13 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 85%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.blog-card-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 .blog-preview h2 {
   color: #1f2421;
   margin-top: 25px;
@@ -524,4 +561,18 @@ body {
 .portfolio-item p {
   font-size: 1.2rem;
   margin-bottom: 10px;
+}
+
+.side-note {
+  color: black;
+  margin-top: 10px;
+  font-style: italic;
+  text-align: center;
+}
+.side-note a {
+  color: black;
+  margin-top: 10px;
+  font-style: italic;
+  text-decoration: underline #49a078;
+  text-align: center;
 }
