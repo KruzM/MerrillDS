@@ -126,8 +126,9 @@ body {
   background-color: #ffffff;
 }
 
-.feature {
-  flex: 1 1 300px;
+.feature-card {
+  flex: 1 2 300px;
+  height: 200px;
   max-width: 350px;
   text-align: center;
   background-color: #e5ebe7;
@@ -146,24 +147,23 @@ body {
 }
 .features .section-heading {
   flex-basis: 100%;
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
   text-align: center;
-  color: #1f2421;
-  /* margin-top: 25px; */
   text-decoration: underline #216869;
-  text-align: center;
-  font-size: 2rem;
 }
-.feature:hover {
+.feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.feature h2 {
+.feature-card h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.feature p {
+.feature-card p {
   font-size: 16px;
 }
 
@@ -573,4 +573,107 @@ body {
   font-style: italic;
   text-decoration: underline #49a078;
   text-align: center;
+}
+
+/* Services Section */
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 300px;
+  height: 375px;
+  max-height: 600px;
+  max-width: 350px;
+  text-align: center;
+  background-color: #e5ebe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: #216869;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Merriweather", serif;
+}
+.services .section-heading {
+  flex-basis: 100%;
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: underline #216869;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+.service-card:nth-of-type(1) {
+  background: #216869;
+  background: linear-gradient(
+    117deg,
+    rgba(33, 104, 105, 1) 0%,
+    rgba(83, 193, 131, 1) 62%,
+    rgba(156, 197, 161, 1) 100%
+  );
+  color: #f4f7f6;
+}
+
+.service-card:nth-of-type(2) {
+  background: #216869;
+  background: linear-gradient(
+    298deg,
+    rgba(33, 104, 105, 1) 0%,
+    rgba(83, 193, 131, 1) 62%,
+    rgba(156, 197, 161, 1) 100%
+  );
+  color: #f4f7f6;
+}
+
+.service-card:nth-of-type(3) {
+  background: #216869;
+  background: linear-gradient(
+    37deg,
+    rgba(33, 104, 105, 1) 0%,
+    rgba(83, 193, 131, 1) 62%,
+    rgba(156, 197, 161, 1) 100%
+  );
+  color: #f4f7f6;
+}
+
+.service-card:nth-of-type(4) {
+  background: #216869;
+  background: linear-gradient(
+    221deg,
+    rgba(33, 104, 105, 1) 0%,
+    rgba(83, 193, 131, 1) 62%,
+    rgba(156, 197, 161, 1) 100%
+  );
+  color: #f4f7f6;
 }
